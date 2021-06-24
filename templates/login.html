@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khai Báo Y Tế TenmaHCM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1><center>KHAI BÁO Y TẾ</center></h1><br>
+    <form action="" method="post">
+        <div class="form-group">
+        <table width="100%">
+            <tr>
+                <td width="25%">Mã NV: <input type="text" class="form-control" style="width:100%;" placeholder="Mã NV" name="MaNV" value="{{
+                    request.form.maNV }}"></td>
+                <td width="25%">Họ Tên NV: <input type="text" class="form-control" style="width:100%;" placeholder="Họ và Tên" name="Ten"
+                               value="{{
+                     request.form.Ten }}"></td>
+                <td width="25%">Bộ Phận: <input type="text" class="form-control" style="width:100%;" placeholder="Bộ Phận" name="depart"
+                               value="{{
+                        request.form.depart }}"></td>
+                <td width="25%">Số CMND: <input type="number" class="form-control" style="width:100%;" placeholder="Số CMND" name="CMND"
+                               value="{{
+                        request.form.CMND }}"></td>
+            </tr>
+
+        </table>
+        <div class="form-group">
+            Nơi Ở Hiện Tại: <input type="text" class="form-control" style="width:100%;" placeholder="Nơi ở hiện tại" name="Tinh"
+                    value="{{
+                    request.form.Tinh }}">
+        </div>
+        <div>Trong vòng 21 ngày qua, bạn có tiếp xúc với?</div>
+        <div class="form-group">
+         <table width="100%">
+             <tr>
+                <td>Người bệnh hoặc nghi ngờ mắc bệnh COVID-19*
+                </td>
+                <td>
+                    <div>
+                        <select id="Id" name="Id" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Người từ nước có bệnh COVID-19*</td>
+                <td>
+                    <div>
+                        <select id="Id1" name="Id1" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Người có biểu hiện (Sốt, ho, khó thở, viêm họng)*</td>
+                <td>
+                    <div>
+                        <select id="Id2" name="Id2" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+
+
+            <div><h5><center>CÁC TRIỆU CHỨNG</center></h5></div>
+       <div>Trong vòng 21 ngày qua, bạn có thấy xuất hiện các triệu chứng nào sau đây không?</div>
+        <div class="form-group">
+         <table width="100%" border="1">
+            <tr>
+                <th width="80%">Triệu Chứng</th>
+                <th width="20%"><center>Có/Không</center></th>
+            </tr>
+            <tr>
+                <td>Ho</td>
+                <td>
+                    <div>
+                        <select id="Id3" name="Id3" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Sốt</td>
+                <td>
+                    <div>
+                        <select id="Id4" name="Id4" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Khó Thở</td>
+                <td>
+                    <div>
+                        <select id="Id5" name="Id5" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td>Đau Họng</td>
+                <td>
+                    <div>
+                        <select id="Id6" name="Id6" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Mệt Mỏi</td>
+                <td>
+                    <div>
+                        <select id="Id7" name="Id7" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Viêm Phổi</td>
+                <td>
+                    <div>
+                        <select id="Id8" name="Id8" class="form-control" required="true">
+                            <option>-- Câu Trả Lời --</option>
+                            <option value="yes">Có</option>
+                            <option value="No">Không</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <center><input class="btn btn-success" id="btn1" type="submit" value="Gửi Khai Báo"></center><br>
+
+        </div>
+    </form>
+    {% if error %}
+    <p class="error"><strong>Error:</strong> {{ error }}
+        {% endif %}
+    <div><center> TENMA HCM Việt Nam </center></div>
+    <div><center> Địa chỉ: Số 10 đường 9A, khu công nghiệp biên hòa 2, Biên Hòa - Đồng Nai </center></div>
+</div>
+</body>
+</html>
